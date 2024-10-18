@@ -1,0 +1,33 @@
+PSEUDOCODE
+Stage 1
+1.input five number
+2.determine the number of negative, positive and zero number input
+3.print
+STAGE 2
+1.prompt user to enter first number
+2.collect
+3.store as numberone
+4.prompt user to enter second number
+5.collect
+6.store as number two
+7.prompt user to enter third number
+8.collect 
+9.store as number three
+10.prompt user to enter fourth number
+11.collect 
+12.store as number four
+13.prompt user to enter fifth number
+14.collect
+15.store as number five
+16.create a value for positive number
+17.store as positive 
+18.create a value for negative number
+19.store as negative
+20.create a value for zero number
+21.store as zero
+22.compare the five numbers to 0 if == 0 zero +1
+23.compare the five numbers to 0 if > 0 positive +1
+24.compare the five numbers to 0 if < 0 negative +1
+25.display zero
+26.display negative
+27.diaplay positive

@@ -1,0 +1,10 @@
+PSEUDOCODE
+STAGE 1
+1.collect number in feet
+2.convert to meter
+3.display result
+STAGE 2
+4.prompt user to enter number in feet 
+5.collect number in feet
+6.convert numbet of feet to meter by multiplying by 0.305
+7.display result
