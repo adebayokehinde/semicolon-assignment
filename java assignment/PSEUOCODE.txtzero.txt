@@ -1,0 +1,14 @@
+PSEUOCODE
+STAGE 1
+1.collect first number
+2.store
+3.collect second number
+4.store
+5.collect third number
+6.store 
+7.determine maximum between three number
+STAGE 2
+1.prompt user to enter 3 number
+7.if number 1 is greater than zero print number 1 as maximum
+8.if number 2 is greater than zero print number 2 as maximum
+9.if number 3 is greater than zero print number 3 as maximum 

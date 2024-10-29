@@ -1,0 +1,6 @@
+PSEUDOCODE 
+STAGE 1
+1.prompt user to enter one integer
+2.collect one integer
+3.save as number1
+4.check weather the number entered is negative or positive

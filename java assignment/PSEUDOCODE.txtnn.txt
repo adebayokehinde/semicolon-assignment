@@ -1,0 +1,15 @@
+PSEUDOCODE
+STAGE 1
+1.collect a number
+2.save
+3.check weather the number is positive, negative, or zero
+
+STAGE 2
+4.prompt user to enter a number
+5.collect a number
+6.save as number one
+7.is number is greater than 0 print positive 
+8.if number is less than 0 print negative 
+9.if number is equal to 0 print zero
+10.
+ 
