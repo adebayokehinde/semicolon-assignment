@@ -35,7 +35,7 @@ break;
 break;
 }
      case 2:
-     System.out.println("1.write message\n2.inbox\n3.outbox\n4.picture message\n5.templates\n6.smileys\n7.message settings\n 1.set 1\n1.message centre number\n2.message sent as\n3.message validity\n 2common\n1.delivery\n2.reply via same centre\n3.character support\n8.info service\n9.voice mailbox number\n10.service command editor");
+     System.out.println("1.write message\n2.inbox\n3.outbox\n4.picture message\n5.templates\n6.smileys\n7.message settings\n8.info service\n9.voice mailbox number\n10.service command editor");
    
    int messages = input.nextInt();
     switch(messages) {
@@ -70,7 +70,7 @@ break;
 break;
 }
      case 4:
-     System.out.println("1.missed call\n2.recieved call\n3.dialled numbers\n4.erase recent call lists\n5.show call duration\n 1. last call duration\n 2. all call duration\n 2. received calls' duration\n 4. dialled calls' duration duratio\n 5. clear timers\n6.show call cost\n 1. last call cost\n 2.all calls' cost\n 3. clear counters\n7.call cost settings\n 1. call cost limit\n 2. show cost in\n8.prepaid credit");
+     System.out.println("1.missed call\n2.recieved call\n3.dialled numbers\n4.erase recent call lists\n5.show call duration\n6.show call cost\n7.call cost settings\n8.prepaid credit");
    
    int callregister = input.nextInt();
     switch(callregister) {
