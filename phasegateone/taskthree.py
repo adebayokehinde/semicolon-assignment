@@ -19,21 +19,21 @@ display third_number,second_number,first_number
 
 
 
-first_number = int(input("Enter first number:"))
-second_number = int(input("Enter second number:"))
-third_number = int(input("Enter third number:"))
+numberone = int(input("Enter first number:"))
+numbertwo = int(input("Enter second number:"))
+numberthree = int(input("Enter third number:"))
 
-if first_number < second_number and second_number < third_number:
-	print(f"{first_number},{second_number},{third_number}")
+if numberone < numbertwo and numbertwo < numberthree:
+	print(f"{numberone},{numbertwo},{numberthree}")
 
-if first_number > second_number and first_number < third_number:
-	print(f"{second_number},{first_number},{third_number}")
+if numberone > numbertwo and numberone < numberthree:
+	print(f"{numbertwo},{numberone},{numberthree}")
 
-if first_number < second_number and first_number > third_number:
-	print(f"{third_number},{first_number},{second_number}")
+if numberone < numbertwo and numberone > numberthree:
+	print(f"{numberthree},{numberone},{numbertwo}")
 
-if first_number == second_number and first_number == third_number:
-	print(f"{third_number},{first_number},{second_number}")
+if numberone == numbertwo and numberone == numberthree:
+	print(f"{numberthree},{numberone},{numbertwo}")
 
-if first_number > second_number and second_number > third_number:
-	print(f"{third_number},{second_number},{first_number}")
+if numberone > numbertwo and numbertwo > numberthree:
+	print(f"{numberthree},{numbertwo},{numberone}")
