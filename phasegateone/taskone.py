@@ -13,7 +13,7 @@ print "False"
 '''
 
 import random
-userInput = int(input("Guess the sum of two numbers:"))
+userInput = int(input("Enter the sum of two numbers:"))
 random_number = random.randint(1 , 100)
 sum_of_random_number = random_number + random_number
 
