@@ -1,3 +1,10 @@
+'''
+1.prompt user to enter number between 0 and 1000
+2.collect it                                                                   
+3. save
+                                                                        
+'''
+
 user_input = int(input("Enter number between 0 - 1000:"))
 first_number = user_input // 1000
 first_reminder = user_input % 1000
