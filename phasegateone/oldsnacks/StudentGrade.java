@@ -5,21 +5,21 @@ public class StudentGrade {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("how many student do you hava: ");
-        int numberofstudent = scanner.nextInt();
+        int studentnumber = scanner.nextInt();
 
         System.out.print("how many subject do they offer: ");
-        int numberofsubject = scanner.nextInt();
+        int subjectnumber = scanner.nextInt(); 
 
         System.out.println("saving >>>>>>>>>>>>>>>>>>>>>>>>\nsaved successfully");
         
 
 
+  
+        int[][] scores = new int[studentnumber][subjectnumber];
 
-        int[][] scores = new int[numberofstudent][numberofsubject];
-
-        for (int i = 0; i < numberofstudent; i++) {
+        for (int i = 0; i < studentnumber; i++) {
             System.out.println("Enter scores for student " + (i + 1) + ":");
-            for (int j = 0; j < numberofsubject; j++) {
+            for (int j = 0; j < subjectnumber; j++) {
                 while (true) {
                     System.out.print("Subject " + (j + 1) + ": ");
                     int score = scanner.nextInt();
@@ -37,20 +37,20 @@ public class StudentGrade {
 
         System.out.println("====================================\nStudent  | Sub1 |  Sub2 |  Sub3 |  Total |  Average\n====================================");
 
-        for (int i = 0; i < numberofstudent; i++) {
+        for (int i = 0; i < studentnumber; i++) {
             int totalScore = 0;
             System.out.print("Student " + (i + 1) + "  ");
-            for (int j = 0; j < numberofsubject; j++) {
+            for (int j = 0; j < subjectnumber; j++) {
                 System.out.print(scores[i][j] + "   ");
                 totalScore += scores[i][j];
             }
-            double averageScore = (double) totalScore / numberofsubject;
+            double averageScore = (double) totalScore / subjectnumber;
             System.out.println(totalScore + "   " + averageScore);
         }
 
 
         System.out.println("\nSubject Summary:");
-        for (int j = 0; j < numberofsubject; j++) {
+        for (int j = 0; j < subjectnumber; j++) {
             int highestScore = Integer.MIN_VALUE;
             int lowestScore = Integer.MAX_VALUE;
             int totalSubjectScore = 0;
@@ -59,7 +59,7 @@ public class StudentGrade {
             int highestScoringStudent = -1;
             int lowestScoringStudent = -1;
 
-            for (int i = 0; i < numberofsubject; i++) {
+            for (int i = 0; i < subjectnumber; i++) {
                 int score = scores[i][j];
                 totalSubjectScore += score;
                 if (score > highestScore) {
