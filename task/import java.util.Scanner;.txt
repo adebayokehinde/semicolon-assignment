@@ -1,0 +1,35 @@
+public class Decrypt {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the encrypted four-digit number: ");
+        int encryptedNumber = scanner.nextInt();
+
+        int[] digits = new int[4];
+        for (int i = 3; i >= 0; i--) {
+            digits[i] = encryptedNumber % 10;
+            encryptedNumber /= 10;
+        }
+
+        // Swap back the digits to their original positions
+        int temp = digits[0];
+        digits[0] = digits[2];
+        digits[2] = temp;
+
+        temp = digits[1];
+        digits[1] = digits[3];
+        digits[3] = temp;
+
+        for (int i = 0; i < 4; i++) {
+            digits[i] = (digits[i] + 3) % 10;  // Adding 3 instead of subtracting 7 because (7 + 3) % 10 = 0
+        }
+
+        int originalNumber = 0;
+        for (int i = 0; i < 4; i++) {
+            originalNumber = originalNumber * 10 + digits[i];
+        }
+
+        System.out.println("Original Number: " + originalNumber);
+    }
+}
+
+
